@@ -3,11 +3,21 @@ body {
   padding: 0;
   font-family: 'Karla', sans-serif;
   background-color: whitesmoke;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
+body::-webkit-scrollbar {
+  display: none;
+}
+
 
 .page-width-70 {
   margin-left: 15%;
   margin-right: 15%;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .header {
@@ -103,6 +113,7 @@ body {
 
 .text-box {
   display: flex;
+  flex-direction: column;
 }
 
 .half-width {
@@ -142,4 +153,13 @@ body {
 }
 .border-rad-15{
   border-radius: 15%;
+}
+
+.larger-font {
+  font-size: larger;
+}
+
+.footer-link {
+  color:rgb(0, 53, 13); 
+  text-decoration: underline;
 }
